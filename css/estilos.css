@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.activo {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: #666666;
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.titulo {
+    padding: 40px 40px 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja {
+    background:
+    linear-gradient(135deg, rgb(150, 150, 150) 11px, #d9ecff 11px, #d9ecff 12px, transparent 12px, transparent 33.5px, #d9ecff 33.5px, #d9ecff 34.5px, transparent 34.5px),
+    linear-gradient(225deg, rgb(150, 150, 150) 11px, #d9ecff 11px, #d9ecff 12px, transparent 12px, transparent 33.5px, #d9ecff 33.5px, #d9ecff 34.5px, transparent 34.5px)0 32px;
+    background-color:rgb(150, 150, 150);
+    background-size: 32px 64px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 48px;
+    margin: 10px 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* Header */
+
+header {
+    /* border-bottom: solid 4px 8px white; */
+    box-shadow: 0 4px 8px white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: white;
+}
+
+header .burger {
+    display: none;
+    font-size: 35px;
+}
+
+header nav ul {
+    border: none;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header nav ul li a.activo {
+    font-size: 20px;
+}
+
+
+
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/casa_hero.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-top: 130px;
+    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+    
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 40px;   
+    text-shadow: 0.7px 0.7px white, 0.7px -0.7px white, -0.7px 0.7px white, -0.7px -0.7px white;
+}
+
+
+
+
+/* Introducción */
+
+.intro {
+    padding: 30px 40px 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.texto p {
+    font-size: 22px;
+}
+
+.imagen {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+img {
+    border-radius: 15px;
+}
+
+
+
+
+/* Iconos Compra y Alquiler */
+
+.fila {
+    padding: 30px 40px 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    /* border: 1px solid rgb(215, 172, 255); */
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col2 {
+    /* border: 1px solid rgb(215, 172, 255); */
+    padding: 10px;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.col3 {
+    /* border: 1px solid rgb(215, 172, 255); */
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col3 img {
+    width: 150px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separador {
+    display: none;
+    border: 1.5px solid black;
+    width: 40%;
+    text-align: center;
+}
+
+.boton {
+    margin: 20px;
+    color: #ffffff;
+    /* background-color: #353535; */
+    background: -webkit-linear-gradient(top, #8a8a8a, #252525);
+    font-size: 22px;
+    padding: 5px 10px 8px 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Actividad de la empresa */
+
+.actividad {
+    padding: 30px 40px 40px 50px;
+}
+
+.actividad img {
+    margin: 0px 30px 20px 0px;
+}
+
+.actividad p {
+    font-size: 22px;
+}
+
+.float_izda {
+    float: left;
+}
+
+
+
+
+/* Newsletter */
+
+.newsletter {
+    margin-bottom: 40px;
+}
+
+.colnewsletter {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colnewsletter p {
+    font-size: 24px;
+    color: #666666;
+}
+
+.input_newsletter {
+    color: #3b3b3b;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0px 20px;
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+}
+
+.colnewsletter button {
+    /* background-color: rgb(88, 0, 170); */
+    background: -webkit-linear-gradient(top, #8a8a8a, #252525);
+    color: rgb(201, 201, 201);
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 20px;
+    /* border: 4px solid rgb(233, 160, 255); */
+    border: none;
+    border-radius: 10px;
+}
+
+.colnewsletter button:hover {
+    color: #252525;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+/* Primero */
+
+.primero {
+    margin-top: 100px;
+}
+
+.direccion {
+    font-size: 22px;
+    line-height: 1.8em;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background:
+    linear-gradient(135deg, rgb(150, 150, 150) 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+    linear-gradient(225deg, rgb(150, 150, 150) 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color:rgb(150, 150, 150);
+    background-size: 64px 128px;
+    color: rgb(240, 191, 255);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    position: relative;
+}
+
+footer p {
+    color: black;
+}
+
+footer a {
+    color: black;
+}
+
+footer a.activo {
+    font-size: 26px;
+}
+
+.top {
+    font-size: 40px;
+    position: absolute;
+    top: -25px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 42px;
+    width: 42px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izda {
+    padding-top: 20px;
+}
+
+.izda p {
+    padding: 5px;
+}
+
+.centro {
+    /* border: 1px solid rgb(233, 160, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+    padding-top: 20px;
+}
+
+.barra {
+    display: none;
+}
+
+.dcha {
+    /* border: 1px solid rgb(233, 160, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.dcha a {
+    margin: 10px;
+}
+
+.iconos {
+    margin-top: 40px;
+}
+
+.legales a {
+    font-size: 14px;
+}
+
+.minifooter {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minifooter p {
+    font-size: 14px;
+    padding: 5px;
+}
+
+
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1540px) {
+
+    .hero {
+        justify-content: flex-end;
+    }
+
+    .caja {
+        margin: 10px 100px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .caja {
+        margin: 10px 75px;
+    }
+
+    .col3 img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    footer {
+        flex-direction: row;
+    }
+
+    .col1 {
+        flex-basis: 55%;
+    }
+
+    .col2 {
+        flex-basis: 45%;
+    }
+
+    .centro {
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-right: 50px;
+    }
+
+    .iconos {
+        margin-top: 0px;
+    }
+
+    .caja {
+        margin: 10px 50px;
+        height: 38px;
+    }
+
+}
+
+@media (max-width: 696px) {
+
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .separador {
+        display: initial;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    .col1 {
+        flex-basis: initial;
+    }
+    
+    .izda {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .centro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .barra {
+        display: initial;
+    }
+
+    .caja {
+        height: 28px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    nav {
+        display: none;
+    }
+
+    header .burger {
+        display: initial;
+    }
+   
+}
