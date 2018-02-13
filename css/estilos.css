@@ -18,6 +18,7 @@ a {
 
 img {
     max-width: 100%;
+    border-radius: 15px;
 }
 
 p {
@@ -147,10 +148,6 @@ header nav ul li a.activo {
     padding: 10px;
     flex-basis: 300px;
     flex-grow: 1;
-}
-
-img {
-    border-radius: 15px;
 }
 
 
@@ -297,6 +294,155 @@ img {
     line-height: 1.8em;
 }
 
+
+
+
+/* COMPRAR */
+
+.breadcrumb {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 366px);
+    grid-template-rows: repeat(2, 574px);
+    grid-gap: 40px;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.tarjetas p {
+    line-height: normal;
+}
+
+.tarjeta {
+    width: 365px;
+    height: 574px;
+    box-shadow: 2px 2px 4px #666666;
+}
+
+.imagentarjeta {
+    width: 366px;
+    height: 274px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagentarjeta img {
+    height: 274px;
+    border-radius: 0px;
+}
+
+.btn {
+    background-color: #666666;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-bottom: 4px solid #444444;
+    align-self: center;
+}
+
+.btn:hover{
+    background-color: #444444;
+}
+
+.datos {
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.toptarjeta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion {
+    width: 100%;
+}
+
+.direccion p:first-child {
+    font-size: 22px;
+}
+
+.datos p {
+    font-size: 16px;
+}
+
+.rayatarjeta {
+    width: 100%;
+}
+
+.detallestarjeta {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preciotarjeta {
+    width: 100%;
+    /* height: 50px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.detallestarjeta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0px;
+}
+
+.detallestarjeta p {
+    margin-right: 15px;
+}
+
+/* Paginación */
+
+.dchapaginacion {
+    float: right;
+}
+
+.izqdapaginacion {
+    float: left;
+}
+
+.botonpaginacion {
+    background-color: #666666;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botonpaginacion2 {
+    background-color: white;
+    color: #444444;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+.paginacion {
+    text-align: center;
+    margin-left: 10px;
+    padding: 0px 100px 50px 100px;
+}
+
+.oculto {
+    visibility: hidden;
+}
 
 
 
