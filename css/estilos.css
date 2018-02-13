@@ -306,6 +306,12 @@ img {
 
 /* Localización */
 
+.filacontacto {
+    padding: 30px 40px 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .col1contacto {
     /* border: 1px solid rgb(215, 172, 255); */
     padding: 10px;
@@ -318,6 +324,12 @@ img {
     padding: 10px;
     flex-basis: 150px;
     flex-grow: 1;
+}
+
+.filacontacto2 {
+    /* padding: 30px 40px 40px 40px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -617,6 +629,14 @@ footer a.activo {
 
 @media (max-width: 1122px) {
 
+    /* Contacto */
+
+    .filacontacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .col1contacto {
         /* border: 1px solid rgb(215, 172, 255); */
         padding: 10px;
@@ -633,7 +653,26 @@ footer a.activo {
     
 }
 
+@media (max-width: 1000px) {
+
+    /* Contacto */
+
+    .col50 {
+        width: 100%;
+    }
+    
+    .col33 {
+        width: 100%;
+    }
+    
+    .col66 {
+        width: 100%;
+    }
+}
+
 @media (max-width: 850px) {
+
+    /* Footer */
 
     footer {
         flex-direction: row;
@@ -675,9 +714,18 @@ footer a.activo {
         display: initial;
     }
 
+    /* Contacto */
+
+    iframe {
+        width: 500px;
+        height: 350px;
+    }
+
 }
 
 @media (max-width: 640px) {
+
+    /* Footer */
 
     footer {
         flex-direction: column;
@@ -706,6 +754,8 @@ footer a.activo {
         display: initial;
     }
 
+    /* Separador */
+
     .caja {
         height: 28px;
     }
@@ -713,6 +763,8 @@ footer a.activo {
 }
 
 @media (max-width: 600px) {
+
+    /* Barra de navegación */
     
     nav {
         display: none;
@@ -720,6 +772,12 @@ footer a.activo {
 
     header .burger {
         display: initial;
+    }
+    
+    /* Contacto */
+
+    iframe {
+        width: 400px;
     }
    
 }
