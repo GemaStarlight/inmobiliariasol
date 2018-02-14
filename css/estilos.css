@@ -390,13 +390,6 @@ header nav ul li a.activo {
     justify-content: space-between;
 }
 
-.preciotarjeta {
-    width: 100%;
-    /* height: 50px; */
-    display: flex;
-    justify-content: space-around;
-}
-
 .iconostarjeta img {
     width: 40px;
     height: 40px;
@@ -405,6 +398,13 @@ header nav ul li a.activo {
 
 .iconostarjeta p {
     margin-right: 15px;
+}
+
+.preciotarjeta {
+    width: 100%;
+    /* height: 50px; */
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Paginación */
@@ -443,6 +443,132 @@ header nav ul li a.activo {
 
 .oculto {
     visibility: hidden;
+}
+
+
+
+
+/* DETALLE CASA */
+
+.titulocasa {
+    padding: 40px 40px 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.fotosintro {
+    padding: 30px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.fotosintro img {
+    width: 366px;
+    height: 274px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* Descripción */
+
+.filadescripcion {
+    padding: 30px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filadescripcion p {
+    font-size: 22px;
+}
+
+.datosdescripcion {
+    /* height: 300px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.iconosdescripcion {
+    width: 80%;
+    /* height: 50px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.iconosdescripcion img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+}
+
+.iconosdescripcion p {
+    font-size: 24px;
+}
+
+/* Detalles */
+
+.filadetalles {
+    padding: 30px 20px 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coldetalles {
+    /* border: 1px solid rgb(215, 172, 255); */
+    padding: 10px;
+    /* flex-basis: 300px;
+    flex-grow: 1; */
+}
+
+.filadetalles .coldetalles ul {
+    padding-left: 30px;
+}
+
+.filadetalles2 {
+    padding: 30px 50px 0px 50px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+}
+
+.filadetalles2 p {
+    font-size: 18px;
+}
+
+/* Imágenes */
+
+.fotosimagenes {
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.fotosimagenes img {
+    /* width: 366px;
+    height: 274px; */
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* Mapa */
+
+.mapadetalle {
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 20px;
 }
 
 
@@ -761,6 +887,29 @@ footer a.activo {
         margin: 10px 100px;
     }
 
+    /* Imágenes */
+
+    .fotosimagenes img {
+        width: 500px;
+        height: 375px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .iconosdescripcion img {
+        width: 45px;
+        height: 45px;
+        border-radius: 0px;
+    }
+    
+    .iconosdescripcion p {
+        font-size: 22px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -771,6 +920,25 @@ footer a.activo {
 
     .col3 img {
         width: 120px;
+    }
+
+    /* Imágenes */
+
+    .fotosimagenes img {
+        width: 400px;
+        height: 300px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+    .iconosdescripcion img {
+        width: 40px;
+        height: 40px;
+        border-radius: 0px;
+    }
+
+    .iconosdescripcion p {
+        font-size: 20px;
     }
 }
 
@@ -797,7 +965,27 @@ footer a.activo {
         flex-basis: 100%;
         flex-grow: 1;
     }
+
+    /* Detalle */
+
+    .titulocasa {
+        font-size: 18px;
+    }
+
+    .iconosdescripcion p {
+        font-size: 18px;
+    }
     
+}
+
+@media (max-width: 1050px) {
+
+    /* Detalles */
+
+    .iconooculto {
+        display: none;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -815,6 +1003,43 @@ footer a.activo {
     .col66 {
         width: 100%;
     }
+
+    /* Detalle */
+
+    
+
+    /* Imágenes */
+
+    .fotosimagenes img {
+        width: 366px;
+        height: 274px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    /* Detalles */
+
+    .filadetalles {
+        padding: 30px 20px 0px 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconosdescripcion img {
+        width: 30px;
+        height: 30px;
+        border-radius: 0px;
+    }
+    
+    .iconosdescripcion p {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 850px) {
